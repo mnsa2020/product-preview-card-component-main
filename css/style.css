@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background: hsl(30, 38%, 92%);
+}
+body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  body main .card {
+    flex-direction: column;
+    width: 375px;
+  }
+}
+body main .card img.product {
+  width: 300px;
+}
+@media (max-width: 767px) {
+  body main .card img.product {
+    width: fit-content;
+    content: url(../images/image-product-mobile.jpg);
+  }
+}
+body main .card .info {
+  width: 300px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  body main .card .info {
+    width: fit-content;
+    min-width: 375px;
+  }
+}
+body main .card .info h5 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+body main .card .info h1 {
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+body main .card .info p.text {
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 1.8px;
+  margin-bottom: 30px;
+}
+body main .card .info p.price {
+  margin-bottom: 25px;
+}
+body main .card .info p.price span {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  color: hsl(158, 36%, 37%);
+}
+body main .card .info p.price sup del {
+  margin-left: 10px;
+}
+body main .card .info a {
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background: hsl(158, 36%, 37%);
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+}
+body main .card .info a:hover {
+  background: hsl(212, 21%, 14%);
+}
+body main .card .info a img {
+  width: 15px;
+  margin-right: 10px;
+}
+body main .attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+body main .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
